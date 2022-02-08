@@ -1,0 +1,49 @@
+﻿@model moment2.Models.RecordModel
+@{
+    ViewData["Title"] = "Skiv-formulär";
+}
+<div class="form">
+<h2>@ViewData["Message"]</h2>
+
+    <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <label asp-for="ProdYear"></label><br>
+        <input asp-for="ProdYear" />
+        <span asp-validation-for="ProdYear" class="errorMessage"></span>
+        <br>
+        <label asp-for="Artist"></label><br>
+        <input asp-for="Artist" />
+        <span asp-validation-for="Artist" class="errorMessage"></span>
+        <br>
+        <label asp-for="Title"></label><br>
+        <input asp-for="Title" />
+        <span asp-validation-for="Title" class="errorMessage"></span>
+        <br>
+        <label asp-for="Genre"></label><br>
+        <input asp-for ="Genre" type="radio" value="Rock" id="idGenre" /> Rock
+        <input asp-for ="Genre" type="radio" value="Metall" id="idGenre" /> Metall
+        <input asp-for ="Genre" type="radio" value="Punk" id="idGenre" /> Punk
+        <input asp-for ="Genre" type="radio" value="Annat" id="idGenre" /> Annat
+        <span asp-validation-for="Genre" class="errorMessage"></span>
+        <br>
+        <label asp-for="Tracks"></label><br>
+          <select asp-for="Tracks">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        <br>
+        <label asp-for="Opinion"></label><br>
+        <textarea asp-for="Opinion"></textarea><br>
+        <input type="submit" value="Lägg till skiva" /> 
+    </form>
+    <p>De tillagda skivorna finns i denna <a asp-action ="Records">lista</a>

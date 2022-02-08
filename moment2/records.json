@@ -1,0 +1,26 @@
+[
+  {
+    "ProdYear": "1985",
+    "Artist": "Kurts  Combo",
+    "Title": "kokosnöts calypso",
+    "Tracks": 9,
+    "Opinion": "en svängig skiva",
+    "Genre": "Metall"
+  },
+  {
+    "ProdYear": "1985",
+    "Artist": "Helmers Gris-trio",
+    "Title": "Oink Oink",
+    "Tracks": 10,
+    "Opinion": "De svänger",
+    "Genre": "Rock"
+  },
+  {
+    "ProdYear": "1988",
+    "Artist": "Kurts  Combo",
+    "Title": "hej å hå",
+    "Tracks": 10,
+    "Opinion": "bra skiva!!",
+    "Genre": "Metall"
+  }
+]

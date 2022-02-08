@@ -1,0 +1,16 @@
+﻿@model List<moment2.Models.RecordModel>
+@{
+    ViewData["Title"] = "Skiv-listan";
+}
+
+<div class="text-center">    
+    <h2>Här är skivor som folk gillar:</h2>
+    <ul class="list">
+        @if(Model != null){
+            @foreach(var record in Model)
+            {
+                <li><strong>@record.Artist</strong> - @record.Title (utgiven: @record.ProdYear Genre: @record.Genre) @record.Tracks Spår. Tipsarens åsikt: <em>@record.Opinion</em></li>
+            }
+        }
+    </ul>
+</div>
